@@ -2,8 +2,7 @@
 //hw02
 //Arithmetic
 
-//This program will compute the cost of items bought, including the
-//PA sales tax of 6%
+//This program will compute the cost of items bought, including the PA sales tax of 6%
 
 //create a class
 public class Arithmetic
@@ -53,6 +52,7 @@ public class Arithmetic
         System.out.println("The sales tax is $" + (totalEnvelopeCost$ * taxPercent) + ". ");
 
         //print out the total costs
+        //used float to remove excessive decimal values
         System.out.println("The total cost of the purchases before tax is $" + (float)totalCost$ + ". The total sales tax is $" + finalTax + 
         ". The total cost of the purchases including sales tax is $" + (float)(totalCost$ + finalTax) + ". ");
     }
