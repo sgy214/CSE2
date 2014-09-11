@@ -14,9 +14,9 @@ public class Bicycle
         Scanner input = new Scanner(System.in);
         
         //input data
-        System.out.println("Enter the number of seconds:");
+        System.out.print("Enter the number of seconds: ");
         double seconds = input.nextDouble();
-        System.out.println("Enter the number of counts:");
+        System.out.print("Enter the number of counts: ");
         double counts = input.nextDouble();
         
         //intermediate variables
