@@ -6,8 +6,10 @@
 //access the Scanner utility
 import java.util.Scanner;
 
+//create a class
 public class Root 
 {
+    //create a main method
     public static void main(String[] args)
     {
         //create a scanner
@@ -17,7 +19,7 @@ public class Root
         System.out.print("Enter a double and I print its cubed root: ");
         double x = input.nextDouble();
         
-        //calculations
+        //cube root calculations
         double guess = x/3;
         guess = (2*guess*guess*guess+x)/(3*guess*guess);
         guess = (2*guess*guess*guess+x)/(3*guess*guess);
@@ -25,6 +27,7 @@ public class Root
         guess = (2*guess*guess*guess+x)/(3*guess*guess);
         guess = (2*guess*guess*guess+x)/(3*guess*guess);
         
+        //estimate cubed
         double cubed = guess*guess*guess;
         
         //print out the results

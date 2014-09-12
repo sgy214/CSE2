@@ -6,14 +6,16 @@
 //access the Scanner utility
 import java.util.Scanner;
 
+//create a class
 public class Bicycle
 {
+    //create a main method
     public static void main(String[] args)
     {
         //create a scanner
         Scanner input = new Scanner(System.in);
         
-        //input data
+        //ask for user input
         System.out.print("Enter the number of seconds: ");
         double seconds = input.nextDouble();
         System.out.print("Enter the number of counts: ");
@@ -28,7 +30,6 @@ public class Bicycle
         minutesPerHour = 60;    //minutes in an hour
         
         //compute the values for the distances
-        //distance in miles
         double distance = counts*wheelDiameter*PI/inchesPerFoot/feetPerMile;
 
         //compute time in minutes
@@ -43,6 +44,7 @@ public class Bicycle
         int intDistance = (int)distance;
         double roundedDistance = intDistance;
         roundedDistance = roundedDistance/100;
+        
         //round the average mph to two decimal places
         averageMPH = averageMPH*100;
         int intAverage = (int)averageMPH;
