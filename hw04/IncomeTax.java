@@ -26,14 +26,18 @@ public class IncomeTax
         //verifies inputs and calculates results
         if (myScanner.hasNextInt()) {
             income = myScanner.nextInt();
-            if (income >= 0 && income < 20)
+            if (income >= 0 && income < 20) {
                 tax = 0.05;
-            else if (income >= 20 && income < 40)
+            }
+            else if (income >= 20 && income < 40) {
                 tax = 0.07;
-            else if (income >= 40 && income < 78)
+            }
+            else if (income >= 40 && income < 78) {
                 tax = 0.12;
-            else if (income >= 78)
+            }
+            else if (income >= 78) {
                 tax = 0.14;
+            }
             else {
                 System.out.println("Please enter a positive integer.");
                 return;

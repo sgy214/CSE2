@@ -30,8 +30,9 @@ public class Month
                 if (myScanner.hasNextInt()) {
                     year = myScanner.nextInt();
                     isLeapYear = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
-                    if (isLeapYear)
+                    if (isLeapYear) {
                         days = 29;
+                    }
                     else {
                         days = 28;
                     }

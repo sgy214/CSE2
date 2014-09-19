@@ -43,7 +43,7 @@ public class TimePadding
         minutes = ""+min;
         seconds = ""+sec;
         
-        if (min < 10){
+        if (min < 10) {
             minutes = "0"+min;
         }
         if (sec < 10) {
