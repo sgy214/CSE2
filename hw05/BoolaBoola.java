@@ -15,6 +15,7 @@ public class BoolaBoola
     {
         //construct an instance of the Scanner class
         Scanner myScanner = new Scanner(System.in);
+        //initializes the varibles
         boolean one = false;
         boolean two = false;
         boolean three = false;

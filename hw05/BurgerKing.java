@@ -27,7 +27,7 @@ public class BurgerKing
             if (order.equals("B") || order.equals("b")) {
                 System.out.println("Enter A/a for \"all the fixins,\""); 
                 System.out.println("    C/c for cheese,"); 
-                System.out.println("    N/n for none of the above:  ");
+                System.out.print("    N/n for none of the above:  ");
                 if (myScanner.hasNext()) {
                     String burger = myScanner.next();
                     switch (burger) {
@@ -37,10 +37,14 @@ public class BurgerKing
                         default: System.out.println("Sorry, that is not a valid burger order.");
                     }
                 }
+                else {
+                    System.out.println("Please enter a valid burger order.");
+                    return;
+                }
             }
             //details of soda order
             else if (order.equals("S") || order.equals("s")) {
-                System.out.print("Do you want Pepsi (P/p), Coke (C/c), Sprite (S/s), or Mountain Dew (M/m)? ");
+                System.out.print("Do you want Pepsi (P/p), Coke (C/c), Sprite (S/s), or Mountain Dew (M/m): ");
                 if (myScanner.hasNext()) {
                     String soda = myScanner.next();
                     switch (soda) {
@@ -50,6 +54,10 @@ public class BurgerKing
                         case "M": case "m": System.out.println("You ordered a Mountain Dew."); break;
                         default: System.out.println("Sorry, that is not a valid drink order.");
                     }
+                }
+                else {
+                    System.out.println("Please enter a valid drink order.");
+                    return;
                 }
             }
             //details of fries order
@@ -63,6 +71,10 @@ public class BurgerKing
                         default: System.out.println("Sorry, that is not a valid order for fries.");
                     }
                 }
+                else {
+                    System.out.println("Please enter a valid fries order.");
+                    return;
+                }
             }
             //invalid order input
             else {
@@ -72,7 +84,7 @@ public class BurgerKing
         }
         //invalid user input
         else {
-            System.out.println("Invalid input.");
+            System.out.println("Please enter one of the choices.");
             return;
         }
     }
