@@ -28,7 +28,7 @@ public class NumberStack {
             if(n < 1 || n > 9) {
                 System.out.print("You did not enter a number between 1 and 9, try again: ");
             }
-            // correct input breaks loops and runs rest of program
+            // correct input breaks loop and runs rest of program
             else {
                 break;
             }
